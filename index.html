@@ -3,9 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Results Summary Component</title>
   </head>
   <body>
-    <h1>Proyecto Base</h1>
+    <main>
+      <div class="card">
+        <div class="result">
+          <h2 class="result__title">Your Result</h2>
+          <div class="result__circle">
+            <span class="text text--big">76</span>
+            <span class="text text--light">of 100</span>
+          </div>
+          <h2 class="result__value">Great</h2>
+          <p class="text">Your performance exceed 65% of the people conducting the test here!</p>
+        </div>
+        <div class="summary">
+          <h2 class="summary__title">Summary</h2>
+          <div class="summary__field summary__field--red">
+            <div>
+              <img src="./assets/images/icon-reaction.svg" alt="icon reaction" />
+              <span class="text--red">Reaction</span>
+            </div>
+            <div>
+              <span class="summary__points">80 </span>
+              <span class="summary__total">/ 100</span>
+            </div>
+          </div>
+          <div class="summary__field summary__field--yellow">
+            <div>
+              <img src="./assets/images/icon-memory.svg" alt="icon memory" />
+              <span class="text--yellow">Memory</span>
+            </div>
+            <div>
+              <span class="summary__points">92</span>
+              <span class="summary__total"> / 100</span>
+            </div>
+          </div>
+          <div class="summary__field summary__field--green">
+            <div>
+              <img src="./assets/images/icon-verbal.svg" alt="icon verbal" />
+              <span class="text--green">Verbal</span>
+            </div>
+            <div>
+              <span class="summary__points">80</span>
+              <span class="summary__total"> / 100</span>
+            </div>
+          </div>
+          <div class="summary__field summary__field--blue">
+            <div>
+              <img src="./assets/images/icon-visual.svg" alt="icon visual" />
+              <span class="text--blue">Visual</span>
+            </div>
+            <div>
+              <span class="summary__points">80</span>
+              <span class="summary__total"> / 100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

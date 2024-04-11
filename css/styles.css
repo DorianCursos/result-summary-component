@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-gradient: linear-gradient(to bottom, #7755ff, #6943ff, #2f2ce9);
+  --transparent-gradient: linear-gradient(to bottom, #4d21c9, transparent);
+  --result-text-color: #cac9ff;
+  --result-text-color-light: #cac9ff80;
+  --white: #fff;
+  --red: #ff5555;
+  --red-opacity: #ff575780;
+  --yellow: #ffb21e;
+  --yellow-opacity: #ffb01e80;
+  --green: #00bb8f;
+  --green-opacity: #00bb8f80;
+  --blue: #1125d6;
+  --blue-opacity: #1125d680;
+  --text-dark: #303b59;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -22,4 +39,46 @@ ul {
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #ecf2ff;
+}
+
+.summary__field,
+.summary__field > * {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary__field {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  width: 288px;
+}
+
+.summary__field--red {
+  background-color: var(--red-opacity);
+  color: var(--red);
+}
+
+.summary__field--yellow {
+  background-color: var(--yellow-opacity);
+  color: var(--yellow);
+}
+
+.summary__field--green {
+  background-color: var(--green-opacity);
+  color: var(--green);
+}
+
+.summary__field--blue {
+  background-color: var(--blue-opacity);
+  color: var(--blue);
+}
+
+.summary__points {
+  color: var(--text-dark);
+}
+
+.summary__total {
+  color: var(--text-dark);
+  opacity: 0.5;
 }
